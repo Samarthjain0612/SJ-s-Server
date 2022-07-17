@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      #sj-main {
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        background-image: url(https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
+        background-position-y: -80px;
+        background-size: cover;
+        color: white;
+      }
+      #content {
+        /* background: linear-gradient(to bottom, transparent, black 60%, transparent); */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 3vw;
+        width: 100%;
+        font-family: "Gilroy";
+      }
+      #content h1 {
+        font-weight: 400;
+        text-shadow: 0 0 8px black;
+        -webkit-text-stroke: 0.8px black;
+      }
+      #content h5 {
+        font-weight: 500;
+        text-shadow: 0 0 8px black;
+        -webkit-text-stroke: 0.8px black;
+        margin-bottom: 20px;
+      }
+      #content a {
+        font-size: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      #content i {
+        font-size: 50px;
+      }
+      #content i:hover {
+        color: rgb(80, 80, 255);
+        font-size: 80px;
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+      }
+      #submit{
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sj-main">
+      <div id="content">
+        <img id="submit" src="/images/submit.gif" alt="">
+        <h1>Thank You <%= name %></h1>
+        <h5>Your form is successfully submitted</h5>
+        <a href="/"><i class="ri-reply-fill"></i></a>
+        <a href="/">Submit another response...</a>
+      </div>
+    </div>
+  </body>
+</html>
